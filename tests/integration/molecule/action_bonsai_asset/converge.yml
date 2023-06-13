@@ -3,7 +3,7 @@
   collections:
     - sensu.sensu_go
   hosts: all
-  gather_facts: no
+  gather_facts: false
   tasks:
     - name: Create a Bonsai asset
       bonsai_asset: &idempotence
@@ -11,6 +11,7 @@
           url: http://localhost:8080
         name: sensu/monitoring-plugins
         version: 2.2.0-1
+        on_remote: true
       register: result
 
     - assert:

@@ -1,5 +1,60 @@
 Release notes
 =============
+Version 1.13.2 -- Support for latest Ansible
+--------------------------------------------
+Added support for Ansible 2.14. Added support for Alma and Rocky linux
+
+**New features:**
+
+* Added support for ansible 2.14
+* Added support for Alma and Rocky linux
+
+Version 1.13.1 -- Support for latest Ansible
+--------------------------------------------
+
+Added support for Ansible 2.13.
+
+**New features:**
+
+* Added support for ansible 2.13
+* Removed support for CentOS 8
+
+Version 1.13.0 -- Bonsai asset definitions can be downloaded on controller or remote nodes
+------------------------------------------------------------------------------------------
+
+A user can decide to download the Bonsai asset definitions on either the 
+controller node (previous functionality) or remote nodes (new functionality). 
+A use case mandating such a need is when the controller node's Internet
+connection is unstable or worse than the connection of the remote nodes.
+
+**New features:**
+
+* Add argument remote_on inside bonsai_asset module
+
+Version 1.12.1 -- Sensu Go 6.6.0
+--------------------------------
+
+Added support for Sensu Go 6.5.5 and 6.6.2 on Windows.
+
+**New features:**
+
+* Add Sensu Go 6.5.5 Windows metadata
+* Add Sensu Go 6.6.2 Windows metadata
+
+Version 1.12.0 -- Keeping up with the updates
+---------------------------------------------
+
+In this release, community contributed support for the OracleLinux. We added a
+few tests to catch if things break in the future and this is about it. And
+while we were at work, we also added support for Sensu Go 6.4.0 and 6.4.1 on
+Windows.
+
+**New features:**
+
+* Add support for OracleLinux.
+* Add Sensu Go 6.4.0 Windows metadata.
+* Add Sensu Go 6.4.1 Windows metadata.
+
 
 Version 1.11.1 -- Sensu Go 6.3.0 is here
 ----------------------------------------
