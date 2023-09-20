@@ -105,6 +105,13 @@ argument_specs:
         type: str
         default: P@ssw0rd!
 
+      luster_api_key: &cluster_api_key
+        description:
+          - Initial api key to create when initializing backend for the
+            first time.
+        type: str
+        default: ApIk3Y!
+
   main:
     short_description: Install, configure, and start Sensu Go backend
     description:
@@ -151,3 +158,4 @@ argument_specs:
       dashboard_key_file: *dashboard_key_file
       cluster_admin_username: *cluster_admin_username
       cluster_admin_password: *cluster_admin_password
+      cluster_api_key: *cluster_api_key

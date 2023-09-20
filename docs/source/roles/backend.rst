@@ -58,6 +58,13 @@ control the first-time backend initialization:
      - Initial admin password to create when initializing backend for the
        first time.
 
+   * - cluster_api_key
+     - ApIk3Y!
+     - Initial api key to create when initializing backend for the
+       first time.
+
+  
+
 On Sensu Go version below 5.16, these two variables have no effect since
 default admin credentials are baked into the Sensu Go backend.
 

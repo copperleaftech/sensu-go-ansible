@@ -19,6 +19,7 @@
   environment:
     SENSU_BACKEND_CLUSTER_ADMIN_USERNAME: "{{ cluster_admin_username }}"
     SENSU_BACKEND_CLUSTER_ADMIN_PASSWORD: "{{ cluster_admin_password }}"
+    SENSU_BACKEND_CLUSTER_API_KEY:        "{{ cluster_api_key }}"
   when: init_command_test.rc == 0
   register: init_command
   failed_when: init_command.rc not in (0, 3)  # 0 - OK, 3 - already initialized
