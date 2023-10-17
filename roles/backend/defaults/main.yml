@@ -1,7 +1,7 @@
 ---
 cluster_admin_username: admin
 cluster_admin_password: P@ssw0rd!
-cluster_api_key: ApIk3Y!
+cluster_api_key: 7f63b5bc-41f4-4b3e-b59b-5431afd7e6a2
 
 # Related to /etc/sensu/backend.yml, see
 # https://docs.sensu.io/sensu-go/latest/reference/backend/#configuration-summary
